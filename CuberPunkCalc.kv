@@ -1,0 +1,167 @@
+<MyLabel@MDRaisedButton>:
+    font_size: '23sp'
+    md_bg_color: 252 / 255, 15 / 255, 192 / 255, 1
+    padding: [10,10,10,10]
+
+
+<Container>:
+    rows:4
+    label_text : label_text
+
+    label_1 : label_1
+    label_2 : label_2
+    label_3 : label_3
+    label_4 : label_4
+    label_5 : label_5
+    label_6 : label_6
+    label_7 : label_7
+    label_8 : label_8
+    label_9 : label_9
+    label_0 : label_0
+    label_plus : label_plus
+    label_minus : label_minus
+    label_multiply : label_multiply
+    label_divide : label_divide
+    label_C : label_C
+    label_comma : label_comma
+    label_equals : label_equals
+
+
+
+    AnchorLayout:   # объект прикреплен к части экрана
+	    anchor_y: 'top'
+	    size_hint: 1, 0.6
+        Image:
+            source: 'files/siri.jpg'
+
+
+    GridLayout:
+        cols:1
+        size_hint: 1, 0.2
+        padding: [20,0,0,0]
+
+        Label:
+            text: ''
+            halign: 'left'
+            valign: 'middle'
+            text_size: self.size
+            id: label_text
+            #multiline: False
+            font_size: '25sp'
+
+
+
+
+
+    GridLayout:
+        size_hint: 1,1
+        cols: 4
+        padding: [15,0,0,0]
+
+
+        BoxLayout:
+            orientation: 'vertical'
+            padding:
+
+
+            MyLabel:
+                text: '7'
+                id: label_7
+                on_release:
+                    root.append(7)
+            MyLabel:
+                text: '4'
+                id: label_4
+                on_release:
+                    root.append(4)
+            MyLabel:
+                text: '1'
+                id: label_1
+                on_release:
+                    root.append(1)
+
+            MyLabel:
+                text: '0'
+                id: label_0
+                on_release:
+                    root.append(0)
+
+        BoxLayout:
+            orientation: 'vertical'
+
+            MyLabel:
+                text: '8'
+                id: label_8
+                on_release:
+                    root.append(8)
+            MyLabel:
+                text: '5'
+                id: label_5
+                on_release:
+                    root.append(5)
+            MyLabel:
+                text: '2'
+                id: label_2
+                on_release:
+                    root.append(2)
+            MyLabel:
+                text: 'C'
+                id: label_C
+                on_release:
+                    root.append('C')
+        BoxLayout:
+            orientation: 'vertical'
+
+            MyLabel:
+                text: '9'
+                id: label_9
+                on_release:
+                    root.append(9)
+            MyLabel:
+                text: '6'
+                id: label_6
+                on_release:
+                    root.append(6)
+            MyLabel:
+                text: '3'
+                id: label_3
+                on_release:
+                    root.append(3)
+            MyLabel:
+
+                text: '. / 0.'
+                id: label_comma
+                on_release:
+                    root.append('.')
+        BoxLayout:
+            orientation: 'vertical'
+
+            MyLabel:
+                text: '+'
+                id: label_plus
+                on_release:
+                    root.action('+')
+            MyLabel:
+                text: '-'
+                id: label_minus
+                on_release:
+                    root.action('-')
+            MyLabel:
+                text: '*'
+                id: label_multiply
+                on_release:
+                    root.action('*')
+            MyLabel:
+                text: '/'
+                id: label_divide
+                on_release:
+                    root.action('/')
+    BoxLayout:
+        size_hint: 1,0.15
+        padding: [5,5,5,5]
+        MyLabel:
+            size_hint: 1,1
+            text: '='
+            id: label_equals
+            on_release:
+                root.action('=')
