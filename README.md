@@ -1,5 +1,5 @@
 CyberPunkCalc
-Cyberpunkcity is a calculator written in Python, with the addition of the Kivi library, which allows you to further convert the application into an APK file and use it on any Android device.
+Cyberpunkcity is a calculator written in Python, with the addition of the Kivy library, which allows you to further convert the application into an APK file and use it on any Android device.
 
 Be careful with the sound, a soundtrack has been added to the calculator so that it is not boring to count.
 
