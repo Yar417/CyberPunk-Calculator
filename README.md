@@ -1,10 +1,6 @@
-- 👋 Hi, I’m @Yar417
-- 👀 I’m interested in trading, cripto.
-- 🌱 I’m currently learning Python Django web-developing
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me? PM, plis
+CyberPunkCalc
+Cyberpunkcity is a calculator written in Python, with the addition of the Kivi library, which allows you to further convert the application into an APK file and use it on any Android device.
 
-<!---
-Yar417/Yar417 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+Be careful with the sound, a soundtrack has been added to the calculator so that it is not boring to count.
+
+Implemented functions: division, multiplication, addition and subtraction. Also, the ".\0." function has been added, which allows you not to press "Zero" and "Dot" separately. if you are writing a new number that is decimal, just press the " .\0." key. Count and save time!
